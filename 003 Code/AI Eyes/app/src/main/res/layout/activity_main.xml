@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:weightSum="2"
+    android:padding="24dp">
+
+    <!-- 네비게이션 안내 텍스트 -->
+    <TextView
+        android:id="@+id/tv_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="'네비게이션'\n\n 👉 오른쪽\n스와이프"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <!-- 가운데 세로 구분선 -->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#CCCCCC"
+        android:layout_marginHorizontal="12dp" />
+
+    <!-- 영수증 안내 텍스트 -->
+    <TextView
+        android:id="@+id/tv_receipt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="'영수증'\n\n 👈 왼쪽\n스와이프"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</LinearLayout>
